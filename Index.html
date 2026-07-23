@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr. DentalPrecision | Clinical Serenity Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#fbf9fa",
+                        "outline": "#74777d",
+                        "secondary-fixed": "#d6e5ef",
+                        "surface-dim": "#dbd9db",
+                        "surface-bright": "#fbf9fa",
+                        "surface-tint": "#4f6073",
+                        "secondary-container": "#d3e2ed",
+                        "outline-variant": "#c4c6cd",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#001e2f",
+                        "tertiary-fixed-dim": "#a8cbe7",
+                        "on-secondary": "#ffffff",
+                        "background": "#fbf9fa",
+                        "on-tertiary-container": "#7395b0",
+                        "primary-fixed": "#d2e4fb",
+                        "primary-container": "#1a2b3c",
+                        "on-tertiary-fixed-variant": "#274a62",
+                        "secondary-fixed-dim": "#bac9d3",
+                        "on-secondary-fixed-variant": "#3b4951",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#b7c8de",
+                        "secondary": "#526069",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#c9e6ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e4e2e3",
+                        "on-primary-container": "#8192a7",
+                        "on-secondary-container": "#56656e",
+                        "on-primary-fixed-variant": "#38485a",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#303032",
+                        "surface-container": "#efedef",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f2f0f2",
+                        "on-secondary-fixed": "#0f1d25",
+                        "surface-variant": "#e4e2e3",
+                        "primary": "#041627",
+                        "inverse-primary": "#b7c8de",
+                        "on-primary-fixed": "#0b1d2d",
+                        "on-surface": "#1b1c1d",
+                        "tertiary-container": "#022d43",
+                        "surface-container-high": "#e9e7e9",
+                        "on-background": "#1b1c1d",
+                        "surface-container-low": "#f5f3f4",
+                        "on-surface-variant": "#44474c",
+                        "tertiary": "#001726",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "16px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "gutter": "24px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "margin": "32px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "display": ["Plus Jakarta Sans"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "display-mobile": ["Plus Jakarta Sans"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .clinical-shadow {
+            box-shadow: 0px 4px 20px rgba(26, 43, 60, 0.05);
+        }
+        .clinical-shadow-hover:hover {
+            box-shadow: 0px 8px 30px rgba(26, 43, 60, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-margin py-base h-20">
+<div class="flex items-center gap-4">
+<img alt="DentalPrecision" class="h-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCicNvqb5fNMbo-E1aGTxuxi9iBu30vgw_FT3n2J6IYISOg9QlZDlbtcUdzPRN4dQJ6qn3V8TG-lx_-zZy1cMYN-JMZIP2fFMKfuyy0MGQQ5iJbXEjs2NUk8clprADbqB41RKmFuJzHZUX6kmOIXQocbVi9Q9N-Ql3yz4IrNs1Vub3WiRvobH-yvVFM3RR9VH6MAmaqFI_3gx7jBgS7SyHfN0koq4kFRR2yPj0aSPzE8H4lPqVB23aa"/>
+<span class="font-display text-headline-md font-bold text-primary">DentalPrecision</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-sm text-label-sm text-primary border-b-2 border-primary pb-1" href="#home">Home</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#about">About</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#expertise">Expertise</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#learning">Learning</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#journey">Experience</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#achievements">Achievements</a>
+<a class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-sm text-label-sm hover:opacity-80 transition-opacity" href="#contact">Get in Touch</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="pt-32 pb-xl px-margin max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl items-center min-h-[90vh]" id="home">
+<div class="fade-in-up">
+<span class="text-primary font-label-sm tracking-widest text-label-sm uppercase mb-4 block">Dentist &amp; Lifelong Learner</span>
+<h1 class="font-display text-display mb-6">Hi, I’m <span class="text-primary">Dr. Julian Thorne</span></h1>
+<p class="text-body-lg text-secondary mb-10 max-w-lg">
+                Dedicated to bridging the gap between clinical precision and compassionate care. I specialize in evidence-based dentistry with a focus on patient education and lifelong dental health.
+            </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-sm text-label-sm clinical-shadow hover:opacity-90 transition-all" href="#about">Explore My Journey</a>
+<a class="bg-secondary-fixed text-primary px-8 py-4 rounded-xl font-label-sm text-label-sm hover:bg-secondary-container transition-all" href="#learning">View My Learning</a>
+</div>
+</div>
+<div class="relative fade-in-up" style="transition-delay: 200ms;">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-secondary-fixed/30 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-10 -right-10 w-80 h-80 bg-tertiary-fixed/20 rounded-full blur-3xl -z-10"></div>
+<div class="relative rounded-[2rem] overflow-hidden clinical-shadow border-4 border-white">
+<img class="w-full h-auto object-cover" data-alt="A professional dental practitioner in a clean, modern clinic setting. The lighting is soft and natural, emphasizing a clinical yet serene atmosphere. The dentist is wearing a premium navy blue scrub, looking towards the camera with a confident and warm expression. The background features high-end medical equipment in soft focus, maintaining a minimalist medical aesthetic." src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<div class="absolute bottom-10 -left-6 bg-white p-6 rounded-xl clinical-shadow border-l-4 border-primary animate-bounce-slow">
+<span class="text-primary font-bold block text-headline-md">01</span>
+<span class="font-label-sm text-label-sm text-secondary">Dental Professional</span>
+</div>
+</div>
+</section>
+<!-- About Me -->
+<section class="py-xl bg-secondary-fixed/20" id="about">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xl items-end">
+<h2 class="font-display text-display-mobile md:text-display fade-in-up">More Than a <br/><span class="text-primary">Dentist.</span></h2>
+<p class="text-body-lg text-secondary fade-in-up" style="transition-delay: 100ms;">
+                    My approach to dentistry is rooted in continuous growth and empathetic communication. I believe that every patient deserves a personalized experience where they feel heard, educated, and cared for with the highest level of clinical excellence.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-white p-lg rounded-xl clinical-shadow fade-in-up clinical-shadow-hover transition-all" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">patient_list</span>
+<h3 class="font-headline-md mb-4">Patient-Centered Care</h3>
+<p class="text-secondary">Prioritizing comfort and clear communication for a stress-free dental experience tailored to individual needs.</p>
+</div>
+<div class="bg-white p-lg rounded-xl clinical-shadow fade-in-up clinical-shadow-hover transition-all" style="transition-delay: 300ms;">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">school</span>
+<h3 class="font-headline-md mb-4">Continuous Learning</h3>
+<p class="text-secondary">Actively pursuing the latest advancements in dental technology and methodology to provide cutting-edge care.</p>
+</div>
+<div class="bg-white p-lg rounded-xl clinical-shadow fade-in-up clinical-shadow-hover transition-all" style="transition-delay: 400ms;">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">verified</span>
+<h3 class="font-headline-md mb-4">Professional Excellence</h3>
+<p class="text-secondary">Upholding rigorous clinical standards and ethical practices in every procedure and patient interaction.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Areas of Expertise -->
+<section class="py-xl max-w-7xl mx-auto px-margin" id="expertise">
+<h2 class="font-display text-display-mobile md:text-display mb-xl text-center fade-in-up">What I <span class="text-primary">Focus On</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-6 gap-gutter">
+<div class="md:col-span-3 bg-white border border-outline-variant/30 p-lg rounded-xl clinical-shadow-hover transition-all fade-in-up">
+<div class="flex items-center gap-4 mb-6">
+<span class="bg-primary-fixed p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined">dentistry</span>
+</span>
+<h4 class="font-headline-md">General Dentistry</h4>
+</div>
+<p class="text-secondary">Comprehensive diagnostic and therapeutic oral healthcare focused on long-term wellness.</p>
+</div>
+<div class="md:col-span-3 bg-white border border-outline-variant/30 p-lg rounded-xl clinical-shadow-hover transition-all fade-in-up">
+<div class="flex items-center gap-4 mb-6">
+<span class="bg-primary-fixed p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined">health_and_safety</span>
+</span>
+<h4 class="font-headline-md">Preventive Dentistry</h4>
+</div>
+<p class="text-secondary">Strategic interventions and maintenance routines designed to stop oral diseases before they start.</p>
+</div>
+<div class="md:col-span-2 bg-white border border-outline-variant/30 p-lg rounded-xl clinical-shadow-hover transition-all fade-in-up">
+<span class="material-symbols-outlined text-primary mb-4">clinical_notes</span>
+<h4 class="font-headline-md mb-3">Oral Health Education</h4>
+<p class="text-secondary">Empowering patients through knowledge.</p>
+</div>
+<div class="md:col-span-2 bg-white border border-outline-variant/30 p-lg rounded-xl clinical-shadow-hover transition-all fade-in-up">
+<span class="material-symbols-outlined text-primary mb-4">science</span>
+<h4 class="font-headline-md mb-3">Dental Research</h4>
+<p class="text-secondary">Investigating modern materials and methods.</p>
+</div>
+<div class="md:col-span-2 bg-white border border-outline-variant/30 p-lg rounded-xl clinical-shadow-hover transition-all fade-in-up">
+<span class="material-symbols-outlined text-primary mb-4">forum</span>
+<h4 class="font-headline-md mb-3">Patient Communication</h4>
+<p class="text-secondary">Clarity, empathy, and informed consent.</p>
+</div>
+</div>
+</section>
+<!-- Learning Showcase -->
+<section class="py-xl bg-primary text-on-primary overflow-hidden" id="learning">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="flex justify-between items-center mb-xl">
+<h2 class="font-display text-display-mobile md:text-display">Learning in <span class="text-primary-fixed">Progress</span></h2>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-primary-fixed/30 flex items-center justify-center hover:bg-primary-fixed/10 transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-primary-fixed/30 flex items-center justify-center hover:bg-primary-fixed/10 transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-center">
+<div class="lg:col-span-5 fade-in-up">
+<span class="text-primary-fixed font-label-sm text-label-sm tracking-widest mb-4 block">01 / 04 | DENTAL ANATOMY</span>
+<h3 class="font-display text-headline-lg mb-6">Understanding the foundation of oral structures</h3>
+<p class="text-on-primary/70 text-body-lg mb-8">
+                        Deep dive into the complex geometry of dental crowns and roots. This module focuses on structural integrity and aesthetic restoration techniques.
+                    </p>
+<div class="flex items-center gap-4 mb-8">
+<span class="px-4 py-2 bg-primary-fixed/10 rounded-full border border-primary-fixed/20 text-primary-fixed text-label-sm">Category: Anatomy</span>
+<div class="h-1 w-24 bg-primary-fixed/20 rounded-full overflow-hidden">
+<div class="h-full bg-primary-fixed w-[25%]"></div>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 text-primary-fixed font-label-sm hover:translate-x-2 transition-transform" href="#">
+                        View Learning Details <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+<div class="lg:col-span-7 fade-in-up">
+<div class="aspect-[16/9] rounded-xl overflow-hidden border border-primary-fixed/20 relative group">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A clean, scientific 3D render of human dental anatomy. The image shows a cross-section of a tooth in high detail, highlighting the enamel, dentin, and pulp in a clinical blue and white color scheme. The lighting is crisp and professional, suited for a high-end medical portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhuMYEQke-lOpNIUBPISwzLKdgydQ5cUT6-UXnZ7PUHbn-_8i3MQNIc2AoeVZNbEu3KxQE3VlabYUGk6jb4hUANz9NXIwLAJjlCXG3luUbKby8SvbGbGK041lfJzO31qKABaLZHsQM4xRPyRC0lJEF-YVBJAVDHk9TZSi_Igj7EleUy0JGvIAGi46nx3NpO2XXFOo_obEVZpGR1Raxmo7ETBjj5gxp4ivDyUdT3a-GUk4l64sv1DgI"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Experience -->
+<section class="py-xl max-w-7xl mx-auto px-margin" id="journey">
+<h2 class="font-display text-display-mobile md:text-display mb-xl fade-in-up">My Journey <span class="text-primary">So Far</span></h2>
+<div class="relative">
+<div class="absolute top-1/2 left-0 w-full h-[1px] bg-outline-variant/30 -z-10 hidden md:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="bg-white p-8 rounded-xl clinical-shadow border-t-4 border-primary fade-in-up">
+<span class="text-primary font-bold text-headline-md mb-2 block">2021</span>
+<h4 class="font-headline-md mb-2">Dental Education</h4>
+<p class="text-secondary text-sm">Graduated with honors from the Metropolitan Dental College, specializing in biomimetic dentistry.</p>
+</div>
+<div class="bg-white p-8 rounded-xl clinical-shadow border-t-4 border-primary/40 fade-in-up" style="transition-delay: 100ms;">
+<span class="text-primary font-bold text-headline-md mb-2 block">2022</span>
+<h4 class="font-headline-md mb-2">Academic Project</h4>
+<p class="text-secondary text-sm">Led a research initiative on digital scanning precision in restorative procedures.</p>
+</div>
+<div class="bg-white p-8 rounded-xl clinical-shadow border-t-4 border-primary/20 fade-in-up" style="transition-delay: 200ms;">
+<span class="text-primary font-bold text-headline-md mb-2 block">2023</span>
+<h4 class="font-headline-md mb-2">Clinical Residency</h4>
+<p class="text-secondary text-sm">Advanced residency focusing on complex surgical extractions and implantology foundation.</p>
+</div>
+<div class="bg-white p-8 rounded-xl clinical-shadow border-t-4 border-primary/10 fade-in-up" style="transition-delay: 300ms;">
+<span class="text-primary font-bold text-headline-md mb-2 block">2024</span>
+<h4 class="font-headline-md mb-2">Specialist Workshop</h4>
+<p class="text-secondary text-sm">Current focus on pediatric dental empathy and behavioral management techniques.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements -->
+<section class="py-xl bg-surface-container-low" id="achievements">
+<div class="max-w-7xl mx-auto px-margin">
+<h2 class="font-display text-display-mobile md:text-display mb-xl text-center fade-in-up">Milestones &amp; <span class="text-primary">Achievements</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="group relative overflow-hidden rounded-xl bg-white p-10 clinical-shadow border-b-4 border-transparent hover:border-primary transition-all fade-in-up">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">workspace_premium</span>
+<h3 class="font-headline-md mb-2">Dental Workshop 2025</h3>
+<p class="text-secondary">Certified participant in the 'Next-Gen Prosthetics' summit.</p>
+<div class="absolute bottom-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary-fixed">verified</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-white p-10 clinical-shadow border-b-4 border-transparent hover:border-primary transition-all fade-in-up" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">military_tech</span>
+<h3 class="font-headline-md mb-2">Academic Excellence</h3>
+<p class="text-secondary">Recipient of the Platinum Scalpel award for clinical precision.</p>
+<div class="absolute bottom-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary-fixed">verified</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-white p-10 clinical-shadow border-b-4 border-transparent hover:border-primary transition-all fade-in-up" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">campaign</span>
+<h3 class="font-headline-md mb-2">Health Outreach</h3>
+<p class="text-secondary">Successfully organized and led 5 local community dental screening camps.</p>
+<div class="absolute bottom-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary-fixed">verified</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Work (Masonry) -->
+<section class="py-xl max-w-7xl mx-auto px-margin">
+<h2 class="font-display text-display-mobile md:text-display mb-xl fade-in-up">Selected <span class="text-primary">Work</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-gutter h-[800px]">
+<div class="md:col-span-2 md:row-span-2 relative rounded-xl overflow-hidden group fade-in-up">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A detailed, high-resolution scientific poster about modern dental research. The design is minimalist and professional, featuring high-quality diagrams of oral structures and data visualizations in a palette of navy, teal, and white. The setting is a bright, clean laboratory environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_q_BsFcZV-QDiZ5QkXuNmJGl17CGcvBqZfz9xy0SXoL4JmhPeMfHeg57C8KHV3zYw7-7Drk6s0R7wfHU-Zh6d4daEkJ-xYEcZ9MpSn0_42v7qGrAojsXODJ7TF83sBiryac9jgIaRpQPZzz82_9KNFU2fjfGEQqDBFC_a_0NTdNJ8mAgY8iWDx1VFUTVRjxkPw8aq2ztTYpIYcsk82kGvtWLyBB6JFfeq8rsWYI0ugAE0CjfEyxiL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-8">
+<span class="text-primary-fixed text-label-sm font-label-sm mb-2">Featured Project</span>
+<h3 class="text-on-primary font-display text-headline-lg">Academic Projects: Bio-Materials</h3>
+</div>
+</div>
+<div class="md:col-span-2 relative rounded-xl overflow-hidden group fade-in-up" style="transition-delay: 100ms;">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A scientist or medical professional working with high-tech dental research equipment. The lighting is cool-toned and clinical, focusing on the precision of the tools. The aesthetic is extremely modern and high-end, fitting for a prestigious medical portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChIt1r9BjpivZmwnAZrBHYJUyht0dhUW7t0jMdHOhpAX7Eyap3vWqzuJKhjkggZB7jk5n9dEGCQXVXRqWfzS6tZM0sXKOFqji-hi_b7y97jd1ZcYzOAVDtQOn4NqUK_0Bhjv8cPlKM5k1NvMrRArpHqOUHRZC6HjkrflVgUPOZBKtx-sxIU92A290sDp47_NNI1nCH5Dtkj-Vx0LeLrqCSflMe2x6ml_a-Q4ba4RIY8j2aLzphMF0I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-on-primary font-display text-headline-md">Dental Research</h3>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden group fade-in-up" style="transition-delay: 200ms;">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A clean, friendly graphic representing a dental health campaign for children. Bright, soft lighting and a welcoming atmosphere. The colors are gentle blues and whites, showing smiling children in a clinical but non-scary setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_fAMbhdMILDNi7ZxHx-C6ux2ZpMWofrLntUh7QL-fcXJ59Jw0vLYs4FPEvQ8c--rJYxLw4ih2J7k8FkvUXxqHSzj-qDOTgJ5hR209rgDfGi3OcB1VjmZFHk5kU4oaBV3mJZsehlK92kPwhIFKODBlsKHNi-n-WJ0QSJCBwV6gJ_9C5YQFENctwPJ6DSjgZ_rjnY7k1Dtw9RaSw0R9jCinZrm2Ns8VRz3N6LV8qF-_Zic3kR_svRMa"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-on-primary font-display text-headline-md text-sm">Health Campaign</h3>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden group fade-in-up" style="transition-delay: 300ms;">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A heartwarming scene of community service where a dental professional is teaching oral hygiene to a group of people in an outdoor setting. The light is warm and natural, suggesting a hopeful and supportive atmosphere. Modern medical minimalism style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFSd0f29IIH3of6DxGL4TshGBcQDUL793Snb_soHqdAREoR-0PVay7HFLR7UYx3Dn2FHYVcCfuerhIVWN5AN7lv6m-6vpLajcGTkG2CvimnjDUE2k-1Ts-GZYag9Q1G556BAYX2q6AeLCKmrGqDF0hK8AjDcTQEmrOTIHBDdv7lO8rswQNoiCJlNo37HMtNgCcfz6CAQ7KQxa8zqcW-QGjhW2MYel4k4CD5wgYcAoeNO5f_QstajDm"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-on-primary font-display text-headline-md text-sm">Community Service</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Personal Philosophy -->
+<section class="py-xl bg-primary relative overflow-hidden">
+
+<div class="max-w-4xl mx-auto px-margin text-center relative z-10 fade-in-up">
+<span class="material-symbols-outlined text-primary-fixed text-6xl mb-8">format_quote</span>
+<p class="font-display text-display-mobile md:text-display text-on-primary italic mb-10 leading-tight">
+                "A healthy smile begins with knowledge, care, and trust."
+            </p>
+<div class="w-20 h-1 bg-primary-fixed mx-auto rounded-full"></div>
+</div>
+</section>
+<!-- Contact -->
+<section class="py-xl max-w-7xl mx-auto px-margin" id="contact">
+<div class="bg-white rounded-[2rem] clinical-shadow p-lg md:p-xl grid grid-cols-1 md:grid-cols-2 gap-xl">
+<div class="fade-in-up">
+<h2 class="font-display text-display-mobile md:text-display mb-6">Let’s <span class="text-primary">Connect</span></h2>
+<p class="text-body-lg text-secondary mb-10">Whether you're looking for clinical consultation or academic collaboration, my door is always open.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Email</span>
+<span class="text-primary font-bold">hello@dentalprecision.com</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">Instagram</span>
+<span class="text-primary font-bold">@dr.thorne_dental</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">share</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase tracking-wider">LinkedIn</span>
+<span class="text-primary font-bold">linkedin.com/in/julianthorne</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface p-lg rounded-xl fade-in-up" style="transition-delay: 200ms;">
+<form class="space-y-6">
+<div>
+<label class="block font-label-sm text-label-sm text-secondary mb-2">Full Name</label>
+<input class="w-full bg-white border-outline-variant/30 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-secondary mb-2">Email Address</label>
+<input class="w-full bg-white border-outline-variant/30 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="john@example.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-secondary mb-2">Message</label>
+<textarea class="w-full bg-white border-outline-variant/30 rounded-lg p-4 focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none" placeholder="How can I help you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-xl font-display font-bold text-headline-md clinical-shadow hover:opacity-90 transition-all">Get in Touch</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-low py-lg">
+<div class="max-w-7xl mx-auto px-margin flex flex-col md:flex-row justify-between items-center gap-lg">
+<div class="flex items-center gap-4">
+<span class="font-display text-headline-sm font-bold text-primary">DentalPrecision</span>
+</div>
+<div class="flex gap-8">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Cookie Settings</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 DentalPrecision. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll implementation handled by CSS, but keeping this for extra control if needed
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body></html>
